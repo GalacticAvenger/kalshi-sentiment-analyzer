@@ -155,6 +155,8 @@ The pipeline generates four visualization outputs:
 | `scatter.png` | Correlation with regression line |
 | `lead_lag.png` | Correlation at different time lags |
 
+Example Generated Visualization
+<img width="662" height="392" alt="Screenshot 2025-12-01 at 3 45 39 PM" src="https://github.com/user-attachments/assets/8247c320-a8da-4fb7-8370-75de1258f94d" />
 ---
 
 ## Quick Start
