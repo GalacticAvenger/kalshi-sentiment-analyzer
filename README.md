@@ -296,8 +296,8 @@ This suggests that in prediction markets, **participants may be reacting to pric
 
 ## Authors
 
-**Sam Meddin** — sam.meddin@yale.edu
-**Cyrus** — Yale University
+**Sam Meddin** 
+**Cyrus Rivers** 
 
 ---
 
