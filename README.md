@@ -170,8 +170,12 @@ Example Generated Visualization
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/kalshi-sentiment-analyzer.git
+git clone https://github.com/GalacticAvenger/kalshi-sentiment-analyzer.git
 cd kalshi-sentiment-analyzer
+
+# Create virtual environment (recommended)
+python3.11 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -180,11 +184,22 @@ pip install -r requirements.txt
 ### Running the Analysis
 
 ```bash
-# Use Python 3.11 specifically
-~/.pyenv/versions/3.11.9/bin/python3 run_analysis.py
+# Run the full pipeline
+python run_analysis.py
 ```
 
-Or modify for your Python 3.11 path.
+**Note**: Python 3.11 is required due to a mutex deadlock bug in the HuggingFace `tokenizers` library (v0.22.1) on Python 3.13.
+
+### Reproducing Results
+
+The analysis is fully reproducible. Running `python run_analysis.py` will:
+1. Collect real news headlines from Google News RSS
+2. Collect Reddit posts from r/politics, r/news, r/PoliticalDiscussion
+3. Run DistilBERT sentiment analysis on all collected text
+4. Generate statistical analysis (correlation, lead-lag, Granger causality)
+5. Output visualizations to `outputs/` and data to `data/processed/`
+
+All outputs are deterministic given the same input data. Sample outputs are included in the repository for reference.
 
 ---
 
