@@ -2,7 +2,7 @@
 
 **Analyzing the correlation between public sentiment and prediction market prices using transformer-based NLP models.**
 
-**Authors:** Sam Meddin & Cyrus
+**Authors:** Sam Meddin & Cyrus Rivers
 **Course:** CPSC 171 - Introduction to Artificial Intelligence
 **Institution:** Yale University
 **Semester:** Fall 2025
