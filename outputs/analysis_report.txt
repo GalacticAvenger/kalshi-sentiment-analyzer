@@ -1,0 +1,42 @@
+======================================================================
+KALSHI SENTIMENT ANALYSIS REPORT
+======================================================================
+
+1. SUMMARY STATISTICS
+----------------------------------------------------------------------
+Number of observations: 30
+Average market probability: 0.433 (±0.115)
+Average sentiment score: -0.558 (±0.457)
+
+2. CORRELATION ANALYSIS
+----------------------------------------------------------------------
+Pearson correlation: -0.339
+P-value: 0.0673
+Statistically significant: No (α=0.05)
+
+3. LEAD-LAG ANALYSIS
+----------------------------------------------------------------------
+Strongest relationship: probability leads avg_sentiment by 2 periods
+Correlation: -0.404
+P-value: 0.0331
+
+4. GRANGER CAUSALITY TESTS
+----------------------------------------------------------------------
+Sentiment → Price: avg_sentiment does not Granger-cause probability (p=0.2624)
+Price → Sentiment: probability does Granger-cause avg_sentiment (p=0.0469)
+
+5. REGRESSION ANALYSIS
+----------------------------------------------------------------------
+R² score: 0.449
+RMSE: 0.0841
+MAE: 0.0730
+Coefficients:
+  avg_sentiment: -0.0833
+  avg_sentiment_lag1: -0.0901
+  avg_sentiment_lag2: -0.1102
+
+6. CONCLUSIONS
+----------------------------------------------------------------------
+✗ No significant correlation found
+✓ Price appears to LEAD sentiment by 2 periods
+======================================================================
